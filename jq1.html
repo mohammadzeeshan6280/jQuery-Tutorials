@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Introducation</title>
+    <style>
+        body {
+            background: #98A487;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .container {
+            width: 70%;
+            min-height: 100vh;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid rgb(80, 77, 77);
+
+        }
+
+        .heading-first {
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid red;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 3rem;
+            color: #E74C3C;
+            font-weight: 700;
+            border-bottom: 3px solid red;
+            margin-bottom: 10px;
+            padding-bottom: 10px;
+        }
+
+        .heading-first h2 {
+            font-size: 2rem;
+            color: #8914e9;
+            font-weight: 700;
+            margin-bottom: 5px;
+
+
+        }
+
+        .heading-first ul li {
+            list-style-position: inside;
+            font-size: 1.1em;
+            color: green;
+            letter-spacing: 1px;
+            font-weight: 600;
+        }
+
+        .points {
+            margin-bottom: 10px;
+            border-bottom: 3px solid red;
+            padding-bottom: 10px;
+        }
+
+        .points h2 {
+            font-size: 2rem;
+            color: #5B33FF;
+        }
+
+        .points ul li {
+            list-style-position: inside;
+            font-size: 1.1em;
+            color: brown;
+            font-weight: 600;
+            padding-top: 3px;
+        }
+
+        p {
+            text-align: center;
+            margin-top: 10px;
+            font-size: 1.5rem;
+            color: #21618C;
+            font-weight: 600;
+        }
+
+        .jq-use {
+            padding-bottom: 10px;
+            border-bottom: 3px solid red;
+
+
+        }
+
+        .jq-use h2 {
+            font-size: 1.8rem;
+            color: #700a0a;
+        }
+
+        .jq-use ul li {
+            list-style-position: inside;
+            font-size: 1.1em;
+            color: rgb(54, 34, 126);
+            font-weight: 600;
+            padding-top: 3px;
+
+        }
+
+        .jq-selector {
+            margin-top: 10px;
+
+
+        }
+
+        .jq-selector h2 {
+            margin-bottom: 2px;
+            font-size: 1.6rem;
+            color: #DF2440;
+
+        }
+
+        .jq-selector h3 {
+            margin-bottom: -5px;
+            font-size: 1.3rem;
+            color: #721b31;
+            font-weight: 700;
+        }
+
+        .js {
+            font-size: 1.2rem;
+            text-align: left;
+            margin-bottom: 5px;
+
+
+        }
+
+        span {
+            font-size: 1.2rem;
+            color: rgb(48, 19, 94);
+            font-weight: 600;
+
+        }
+
+        #jq {
+            text-align: left;
+            font-size: 1.2rem;
+            padding-bottom: 10px;
+            border-bottom: 3px solid red;
+        }
+
+        .jq-benefit {
+            margin-top: 10px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid red;
+
+        }
+
+        .jq-benefit h2 {
+            font-size: 1.6rem;
+            color: #147E81;
+        }
+
+        .jq-benefit ul li {
+            list-style-position: inside;
+            font-size: 1.1em;
+            color: #09472d;
+            font-weight: 600;
+            padding-top: 3px;
+
+        }
+
+        .jq-learning {
+            margin-top: 10px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid red;
+        }
+
+        .jq-learning h2 {
+            font-size: 1.6rem;
+            color: #229954;
+            font-weight: 700;
+            margin-bottom: 5px;
+        }
+
+        .jq-learning ul li {
+            list-style-position: inside;
+            font-size: 1.1em;
+            color: #E74C3C;
+            font-weight: 600;
+        }
+
+        .editor-coding {
+            margin-top: 10px;
+
+        }
+
+        .editor-coding h2 {
+            font-size: 1.6rem;
+            color: #55460b;
+            font-weight: 700;
+            margin-bottom: 5px;
+        }
+
+        .editor-coding ul li {
+            list-style-position: inside;
+            font-size: 1.2em;
+            color: #212F3C;
+            font-weight: 600;
+        }
+
+        footer {
+            background: green;
+            text-align: center;
+            padding: 10px;
+            font-size: 1.3rem;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>jQuery</h1>
+        <div class="heading-first">
+            <h2>What is jQuery</h2>
+            <ul>
+                <li>Lightweight JavaScript Library</li>
+            </ul>
+        </div>
+
+        <div class="points">
+            <h2>JavaScript</h2>
+            <ul>
+                <li>Long Selector</li>
+                <li>Complex Animation</li>
+                <li>Lengthy DOM Manipulation</li>
+                <li>Lengthy Ajax Coding</li>
+            </ul>
+            <p>Write less, do more</p>
+        </div>
+
+        <div class="jq-use">
+            <h2>Why Use jQuery</h2>
+            <ul>
+                <li>Short Selector</li>
+                <li>Variety of Animation function</li>
+                <li>Easy DOM Manipulation</li>
+                <li>Easy CSS Styling</li>
+                <li>Easy DOM Traversing</li>
+                <li>Simple Ajax Code</li>
+            </ul>
+        </div>
+
+        <div class="jq-selector">
+            <h2>Short Selectors Examples</h2>
+            <h3>Id Selector in JavaScript</h3>
+            <p class="js">document.getElementById("idname")</p>
+            <span>jQuery Selector</span>
+            <p id="jq">${"#idname"}</p>
+        </div>
+
+        <div class="jq-selector">
+            <h3>Class Selector in JavaScript</h3>
+            <p class="js">document.getElementsByClassName("classname")</p>
+            <span>jQuery Selector</span>
+            <p id="jq">${".classname"}</p>
+        </div>
+
+        <div class="jq-selector">
+            <h3>Tag Selector in JavaScript</h3>
+            <p class="js">document.getElementsByTagName("tagname")</p>
+            <span>jQuery Selector</span>
+            <p id="jq">${"tagname"}</p>
+        </div>
+
+        <div class="jq-benefit">
+            <h2>Benefits of jQuery</h2>
+            <ul>
+                <li>Browser Independent</li>
+                <li>Increase Coding Speed</li>
+            </ul>
+        </div>
+
+        <div class="jq-learning">
+            <h2>Prior Knowledge before Learning jQuery</h2>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+            </ul>
+        </div>
+
+        <div class="editor-coding">
+            <h2>jQuery for Editor Coding</h2>
+            <ul>
+                <li>Notepad Editor</li>
+                <li>Notepad++ Editor</li>
+                <li>VS Code Editor</li>
+                <li>Sublime Editor</li>
+                <li>Atom Editor</li>
+            </ul>
+        </div>
+
+    </div>
+    <footer>
+        Copyright &copy; by | MOHAMMAD ZEESHAN
+    </footer>
+    <script>
+        document.get
+    </script>
+
+
+
+
+
+</body>
+
+</html>
