@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Basic Syntax</title>
+  <style>
+
+      #text{
+        width: 400px;
+        height: 300px;
+        border: 2px solid red;
+        background: khaki;
+        color: brown;
+        font-size: 1.2rem;
+
+    }
+  </style>
+</head>
+<body>
+  
+    <div id="text">
+        <h1>jQuery Basic Syntax</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, illo? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore quos soluta repellendus ipsum ullam fugiat temporibus totam molestiae reprehenderit ipsa!</p>
+    </div>
+
+
+
+
+    <script src="/jquery.js"></script>
+    <script>
+        // HTML Tag
+        $(document).ready(function(){
+           let a = $("#text").html()
+           console.log(a)
+        })
+
+        // HTML Text
+        $(document).ready(function(){
+           let b = $("#text").text()
+           console.log(b)
+        })
+    </script>
+
+    
+</body>
+</html>
