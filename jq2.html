@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Implemetation</title>
+    <style>
+        body {
+            background: grey;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .imple {
+            border: 2px solid red;
+            width: 70vw;
+            min-height: 70vh;
+            margin: auto;
+            padding: 10px 15px;
+
+        }
+
+        .imple h1 {
+            color: red;
+            text-align: center;
+            font-size: 2.5rem;
+        }
+
+        .imple ul li {
+            list-style-position: inside;
+            font-size: 1.5rem;
+            margin-top: 5px;
+            color: rgb(24, 63, 24);
+            margin-bottom: 10px;
+
+        }
+
+        .imple p {
+            font-size: 1.7rem;
+            color: rgb(33, 14, 63);
+            padding: 10px 0;
+
+        }
+
+        .imple h2 {
+            font-size: 1.8rem;
+            color: rgb(17, 79, 87);
+        }
+
+        footer {
+            margin-top: 100px;
+            text-align: center;
+            background: purple;
+            height: 50px;
+            padding-top: 15px;
+            font-size: 1.5rem;
+            color: #fff;
+        }
+
+        @media only screen and (min-width:300px) and (max-width:720px) {
+            .imple h1 {
+                font-size: 2rem;
+            }
+
+            .imple ul li {
+                font-size: 1.2rem;
+            }
+
+            .imple p {
+                font-size: 1.2rem;
+            }
+
+            footer {
+                font-size: 1.2rem;
+            }
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="imple">
+
+        <h1>jQuery Implemetation</h1>
+        <ul>
+            <li>www.jquery.com</li>
+            <li>Download jQuery.js file</li>
+            <li>Do jQuery Code in &lt;/script&gt;</li>
+        </ul>
+
+        <h2>How to use jQuery</h2>
+        <p>
+            &lt;script&gt; src="/jquery.js"&lt;/script&gt;
+            <br>
+            <br>
+            &lt;script&gt; <br>
+            $(document).ready(function(){ <br>
+            console.log("Hello World!") <br>
+            }) <br>
+            &lt;/script&gt;
+
+        </p>
+    </div>
+    <footer>
+        Copyright &copy; | by MOHAMMAD ZEESHAN
+    </footer>
+
+    <script src="/jquery.js"></script>
+    <script>
+        $(document).ready(function () {
+            //   alert("Hello World!")
+            console.log("Hello World!")
+            // document.write("Hello World!")
+        })
+    </script>
+
+
+
+</body>
+
+</html>
