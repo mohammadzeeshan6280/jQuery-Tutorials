@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Get Methods</title>
+    <style>
+        #box {
+            width: 500px;
+            height: 350px;
+            background: grey;
+            border: 2px solid black;
+            font-size: 1.1rem;
+            margin: auto;
+            padding: 5px;
+
+        }
+
+        #box h2 {
+            text-align: center;
+            font-style: italic;
+            font-size: 2rem;
+            color: rebeccapurple;
+            position: relative;
+
+        }
+
+        button {
+            border: none;
+            outline: none;
+            background: black;
+            color: white;
+            padding: 8px 20px;
+            font-size: 1.2rem;
+            position: absolute;
+            left: 45%;
+            cursor: pointer;
+            border-radius: 5px;
+
+        }
+
+        button:hover{
+            background: hotpink;
+            transition: 1s ease-in-out;
+            color: black;
+  
+           
+        }
+    </style>
+</head>
+
+<body>
+    <div id="box" class="text abc">
+        <h2>Text Box</h2>
+        <p>Lorem ipsum dolor <span>Lorem, ipsum dolor.</span> sit amet consectetur adipisicing elit. Corrupti iste ratione animi. Ea totam facere nemo
+            vero nulla aliquam tempore. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati maxime nisi
+            velit autem blanditiis explicabo accusamus! Ex illum, beatae placeat totam nulla dignissimos debitis atque
+            possimus ad, reiciendis voluptatibus facilis quidem consectetur necessitatibus rem nam recusandae nesciunt
+            id inventore in provident incidunt ipsa doloremque quos. Quis ex quaerat quam accusamus.</p>
+
+        <a href="https://www.google.com" id="m2z"></a>
+        <button>Click me</button>
+    </div>
+
+    <script src="/jquery.js"></script>
+    <script>
+        $(document).ready(function () {
+            let a = $("#box").html()
+            console.log(a)
+        })
+
+        $(document).ready(function () {
+            let a = $("#box").text()
+            console.log(a)
+        })
+
+        $(document).ready(function () {
+            let a = $("#box").val()
+            console.log(a)
+        })
+
+        $(document).ready(function () {
+            let a = $('#box').attr('class')
+            console.log(a)
+        })
+
+        $(document).ready(function () {
+            let a = $('#box p').html()
+            console.log(a)
+        })
+
+
+        $(document).ready(function () {
+            $("button").click(function () {
+                let a = $("#m2z").attr("href")
+                console.log(a)
+            })
+        })
+
+    </script>
+</body>
+
+</html>

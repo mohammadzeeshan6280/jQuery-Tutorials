@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Get Methods</title>
+    <style>
+        #text{
+           border: 2px solid red;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>jQuery Form Events</h1>
+    <form action="" id="sform">
+        <label for="email">Email : </label>
+        <input type="email" name="" id="email">
+        <br><br>
+
+        <label for="class">Class : </label>
+        <input type="text" name="" id="class">
+        <br><br>
+
+        <label for="country">Country : </label>
+        <select name="" id="country">
+            <option value="India">India</option>
+            <option value="Pakistan">Pakistan</option>
+            <option value="Nepal">Nepal</option>
+            <option value="England">England</option>
+            <option value="Austrila">Austrila</option>
+        </select>
+        <br><br>
+        <input type="submit">
+    </form>
+    <div id="text"></div>
+
+    <script src="/jquery.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#sform").submit(function(){
+                let a = $("#email").val()
+                console.log(a)
+                alert( `Hello ${a}`)
+            })
+
+            $("#sform").submit(function(){
+                let className = $("#class").val()
+                console.log(className)
+                alert( `Class : ${className} `)
+            })
+
+            $("#sform").submit(function(){
+                let country = $("#country").val()
+                console.log(country)
+                alert( `Country : ${country} `)
+            })
+
+
+
+
+        })
+    </script>
+</body>
+</html>
