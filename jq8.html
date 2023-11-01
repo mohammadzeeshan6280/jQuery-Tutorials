@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Form Events</title>
+    <style>
+        #text {
+            border: 1px solid red;
+            margin-top: 20px;
+            background: pink;
+            text-align: center;
+            font-size: 2rem;
+            color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>jQuery Form Events</h1>
+    <form action="" id="sform">
+        <label for="email">Email : </label>
+        <input type="email" name="" id="email">
+        <br><br>
+
+        <label for="class">Class : </label>
+        <input type="text" name="" id="class">
+        <br><br>
+
+        <label for="country">Country : </label>
+        <select name="" id="country">
+            <option value="India">India</option>
+            <option value="Pakistan">Pakistan</option>
+            <option value="Nepal">Nepal</option>
+            <option value="England">England</option>
+            <option value="Austrila">Austrila</option>
+        </select>
+        <br><br>
+        <input type="submit">
+    </form>
+    <div id="text"></div>
+
+
+    <script src="/jquery.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $("#email").focus(function () {
+                $(this).css('background-color', 'red')
+            })
+
+            $("#email, #class, #country").focus(function () {
+                $(this).css('background-color', 'red')
+            })
+
+            $("#email, #class, #country").blur(function () {
+                $(this).css('background-color', '')
+            })
+
+            $("#country").change(function () {
+                $(this).css('background-color', 'purple')
+                let a = $(this).val()
+                $("#text").html(a)
+            })
+
+            $("#email, #class").select(function () {
+                $(this).css('background-color', 'green')
+            })
+
+            $("#sform").submit(function () {
+                console.log("Form Submitted")
+                alert("Form Submitted")
+            })
+
+
+
+
+        })
+    </script>
+</body>
+
+</html>
